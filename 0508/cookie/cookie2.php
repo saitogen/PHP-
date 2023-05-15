@@ -5,11 +5,10 @@
         else{
             $count=1;
         }
-        if($count>3)
+        if($count>50)
             setcookie("count",$count,time()-100);
         else
             setcookie("count",$count)
-
 ?>
 <!DOCTYPE html>
 <html lang="ja">
