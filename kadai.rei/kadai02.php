@@ -5,7 +5,7 @@ $name=$_POST["user"];
         print "<p>ようこそ".$name."さま</p>";
 }
     else if(
-        header('Location: kadai01.php')
+        header('Location: kadai.php')
     )
 ?>
 <!DOCTYPE html>
@@ -17,27 +17,27 @@ $name=$_POST["user"];
     <title></title>
 </head>
 <body>
-    <h2>甘味処</h2>
+    <h2>強すぎ酒場</h2>
     <form method="post" action="kadai03.php">
-        <p>お団子 100円:<select name="dango">
+        <p>日本酒 2000円:<select name="nihon">
             <option value="0" >0本</option>
             <option value="1" >１本</option>
             <option value="2">２本</option>
             <option value="3">３本</option>
         </p>
     </select>
-        <p>せんべい 100円:<select name="senbei">
-            <option value="0" >0個</option>
-            <option value="1" >1個</option>
-            <option value="2">2個</option>
-            <option value="3">3個</option>
+        <p>米 1000円:<select name="kome">
+            <option value="0" >0本</option>
+            <option value="1" >1本</option>
+            <option value="2">2本</option>
+            <option value="3">3本</option>
         </p>
     </select>
-        <p>まんじゅう 100円:<select name="manju">
-            <option value="0" >0個</option>
-            <option value="1" >1個</option>
-            <option value="2">2個</option>
-            <option value="3">3個</option>
+        <p>ワイン 1500円:<select name="wine">
+            <option value="0" >0本</option>
+            <option value="1" >1本</option>
+            <option value="2">2本</option>
+            <option value="3">3本</option>
         </p>
 </select>
     <input type="submit" name="sub" value="購入">
